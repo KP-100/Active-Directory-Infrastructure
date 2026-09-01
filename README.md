@@ -11,10 +11,10 @@ This lab replicates a small business network environment with a domain controlle
 | Component | Details |
 |---|---|
 | Hypervisor | *VirtualBox* |
-| Domain Controller | * Windows Server 2022 * |
-| Client Workstations | * 2x Windows 11 * |
+| Domain Controller | *Windows Server 2022* |
+| Client Workstations | *2x Windows 11* |
 | Users | 10 user accounts |
-| Domain Name | * LAB.local * |
+| Domain Name | *LAB.local* |
 
 ## Network / AD Topology
 
