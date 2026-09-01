@@ -10,17 +10,16 @@ This lab replicates a small business network environment with a domain controlle
 
 | Component | Details |
 |---|---|
-| Hypervisor | *(e.g., VMware Workstation / VirtualBox / Hyper-V)* |
-| Domain Controller | *(e.g., Windows Server 2022)* |
-| Client Workstations | 2x *(e.g., Windows 10/11)* |
+| Hypervisor | *VirtualBox* |
+| Domain Controller | * Windows Server 2022 * |
+| Client Workstations | * 2x Windows 11 * |
 | Users | 10 user accounts |
-| Domain Name | *(e.g., corp.local)* |
+| Domain Name | * LAB.local * |
 
 ## Network / AD Topology
 
-*(Insert a simple diagram here — draw.io, Lucidchart, or even a screenshot of your AD topology export. Something like: DC → File Server → Workstation 1, Workstation 2)*
+<img width="641" height="231" alt="ADTopology" src="https://github.com/user-attachments/assets/08ab82d5-26b0-4e5e-8c7e-2ef5a9a4520a" />
 
-![Topology Diagram](./screenshots/topology.png)
 
 ## What I Built
 
@@ -29,20 +28,23 @@ This lab replicates a small business network environment with a domain controlle
 - Set up 10 user accounts with role-based group membership.
 - Applied role-based access control across departmental resources.
 
-![OU Structure](./screenshots/ou-structure.png)
+<img width="1027" height="731" alt="image" src="https://github.com/user-attachments/assets/77d7d3fe-c1c4-4e16-8823-f5fbb22bb9bd" />
+
 
 ### 2. File Server & NTFS Permissions
 - Configured a dedicated file server with shared folders for each department.
 - Applied NTFS permissions so users could only access resources relevant to their department/role.
 - Tested access boundaries by logging in as different users to confirm permission scoping worked as intended.
 
-![NTFS Permissions](./screenshots/ntfs-permissions.png)
+<img width="1024" height="731" alt="image" src="https://github.com/user-attachments/assets/53d740e8-4799-4745-adc2-cff0c04cc1bd" />
+
 
 ### 3. Group Policy Objects (GPOs)
 - Enforced password complexity and account lockout policies via GPO.
 - Deployed a shared network printer to client workstations using Group Policy Preferences, eliminating manual per-machine setup.
 
-![GPO Settings](./screenshots/gpo-settings.png)
+<img width="1028" height="727" alt="image" src="https://github.com/user-attachments/assets/3030c07d-76a4-4ac9-94cc-fdc9f8ac0028" />
+
 
 ### 4. Simulated Help Desk Tickets
 Practiced common day-1 sysadmin/help desk tasks, treating each as a "ticket" with documented resolution steps:
@@ -62,13 +64,3 @@ Practiced common day-1 sysadmin/help desk tasks, treating each as a "ticket" wit
 - Help desk ticket documentation & resolution
 - Windows Server administration
 
-## Lessons Learned
-
-*(A few sentences on what surprised you, what you'd do differently, or what you want to explore next — e.g., adding DNS/DHCP, setting up a second DC for redundancy, scripting user creation with PowerShell instead of doing it manually.)*
-
-## Next Steps
-
-- [ ] Automate user provisioning with PowerShell scripts
-- [ ] Add a second domain controller for redundancy
-- [ ] Configure DHCP/DNS from scratch
-- [ ] Document with more detailed screenshots / video walkthrough
