@@ -18,7 +18,7 @@ This lab replicates a small business network environment with a domain controlle
 
 ## Network / AD Topology
 
-<img width="641" height="231" alt="ADTopology" src="https://github.com/user-attachments/assets/08ab82d5-26b0-4e5e-8c7e-2ef5a9a4520a" />
+<img width="641" height="231" alt="ADTopology" src="https://github.com/user-attachments/assets/c8f0b3e9-2808-4128-adbd-c2e6c6997b44" />
 
 
 ## What I Built
